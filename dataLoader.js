@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Funzione asincrona per il fetching dei dati
 async function getData() {
-    const response = await fetch("assets/united_kingdom_data.json");
+    const response = await fetch("united_kingdom_data.json");
     data = await response.json();
     sessionStorage.setItem("data", JSON.stringify(data));
     return data;
