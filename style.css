@@ -258,6 +258,7 @@ input[type="search"]::placeholder {
 
 #cards-container.secondary {
     opacity: 0.3;
+    pointer-events: none;
 }
 
 .card {
@@ -269,9 +270,9 @@ input[type="search"]::placeholder {
     border: 1px solid var(--text-color);
 }
 
-.selected {
+/* .selected {
     box-shadow: 0 0 10px springgreen;
-}
+} */
 
 .card:hover {
     cursor: pointer;
@@ -317,15 +318,24 @@ input[type="search"]::placeholder {
 }
 
 .close-button {
-    background-color: transparent;
+    background-color: var(--bg-color);
     color: var(--text-color);
     border: none;
     cursor: pointer;
-    width: 100%;
-    text-align: end;
-    padding-right: 5px;
+    width: 60%;
+    margin: 0 auto;
     font-size: calc(var(--font-size-page) * 1.5);
     z-index: 2;
+    position: sticky;
+    top: 0;
+    left: 20%;
+    box-shadow: 0 2px 10px red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.close-button > i {
+    font-size: calc(var(--font-size-page) * 2);
 }
 
 .details {
