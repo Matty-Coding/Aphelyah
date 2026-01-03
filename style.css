@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Inter", sans-serif;
-    height: 100dvh;
+    height: 100vh;
     overflow: hidden;
     gap: 1rem;
     background-color: var(--bg-color);
@@ -291,7 +291,7 @@ input[type="search"]::placeholder {
     flex-direction: column;
     align-items: center;
     gap: 0.3rem;
-    margin-bottom: 0.3rem;
+    padding: 0.5rem 0.2rem;
 } 
 
 /* PANNELLO */
@@ -466,6 +466,8 @@ figcaption {
 }
 
 .ability-item {
+    background-color: var(--bg-color);
+    color: var(--text-color);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -523,7 +525,7 @@ figcaption {
 /* MEDIA QUERY RESPONSIVE DESIGN */
 @media (min-width:768px) {
     :root {
-        --font-size-page: 14px;
+        --font-size-page: 13px;
     }
 
     .search-container {
@@ -545,7 +547,7 @@ figcaption {
 
 @media (min-width:1024px) {
     :root {
-        --font-size-page: 16px;
+        --font-size-page: 15px;
     }
     .search-container {
         width: 40%;
@@ -588,11 +590,11 @@ figcaption {
 
 @media (min-width:1560px) {
     :root {
-        --font-size-page: 24px;
+        --font-size-page: 21px;
     }
 
     .panel {
-        height: 760px;        
+        height: 720px;        
     }
 
     .icon-ability-container {
@@ -603,11 +605,11 @@ figcaption {
 
 @media (min-width:1920px) {
     :root {
-        --font-size-page: 28px;
+        --font-size-page: 22px;
     }
 
     .panel {
-        height: 820px;
+        height: 750px;
     }
 
     .carousel .arrow-button:first-of-type {
